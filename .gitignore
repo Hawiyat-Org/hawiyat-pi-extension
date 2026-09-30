@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+
+# pi-stats cache (contains local session paths)
+.cache.json
+.cache.json.tmp
+
+# interactive subagents local config
+config.json

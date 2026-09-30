@@ -1,0 +1,47 @@
+{
+  "name": "@hawiyat-org/pi-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hawiyat pi extensions: Hawiyat model provider, pi-stats usage reporting, interactive subagents, and web fetch.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extensions",
+    "hawiyat"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/hawiyat-provider/index.ts",
+      "./extensions/pi-stats/index.ts",
+      "./extensions/web-fetch/index.ts",
+      "./extensions/subagents/index.ts"
+    ]
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.5.0",
+    "linkedom": "^0.16.0",
+    "turndown": "^7.2.0",
+    "unpdf": "^1.4.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*",
+    "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-ai": { "optional": true },
+    "@earendil-works/pi-coding-agent": { "optional": true },
+    "@earendil-works/pi-tui": { "optional": true },
+    "@mariozechner/pi-coding-agent": { "optional": true },
+    "@mariozechner/pi-tui": { "optional": true },
+    "@sinclair/typebox": { "optional": true },
+    "typebox": { "optional": true }
+  }
+}
